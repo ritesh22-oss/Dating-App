@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen">
+        <h1>Welcome</h1>
+        <button id="startButton">Start</button>
+    </div>
+
+    <div class="name-screen" style="display: none;">
+        <div class="login-container">
+            <h2>Enter Your Name</h2>
+            <div class="input-container">
+                <input type="text" id="nameInput" placeholder="Your Name" >
+            </div>
+            <button id="submitNameButton">Submit</button>
+        </div>
+    </div>
+
+    <div class="game-screen" style="display: none;">
+        <h2 id="levelTitle">Level 1</h2>
+        <div id="questionContainer">
+            <p id="question">Question will appear here...</p>
+            <button class="optionButton">Option 1</button>
+            <button class="optionButton">Option 2</button>
+        </div>
+    </div>
+
+    <div class="personalized-question-screen" style="display: none;">
+        <h2>Final Question</h2>
+        <p id="personalizedQuestion">What is my name, <span id="playerName"></span>?</p>
+        <button id="restartGameButton">Restart Game</button>
+    </div>
+
+    <div class="game-over-screen" style="display: none;">
+        <h2>Game Over!</h2>
+        <button id="restartButton">Restart Game</button>
+    </div>
+
+    <div class="level-completed-screen" style="display: none;">
+        <h2>Level Completed!</h2>
+        <button id="nextLevelButton">Next Level</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
